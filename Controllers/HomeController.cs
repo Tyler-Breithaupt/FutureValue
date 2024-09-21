@@ -12,7 +12,11 @@ namespace FutureValue.Controllers
             ViewBag.FV = 99999.99;
             return View();
         }
-
+        [HttpGet]
+        public IActionResult About()
+        {
+            return View();
+        }
         [HttpPost]
         public IActionResult Index(FutureValueModel model)
         {
